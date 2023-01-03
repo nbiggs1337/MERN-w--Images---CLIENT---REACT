@@ -73,13 +73,13 @@ const Add = props => {
                             <label for="formGroupExampleInput">Image File: </label>
                             <input type="file" accept='.png, .jpg, .jpeg, .svg' class="form-control" id="formGroupExampleInput" name='image' onChange={ e => imageHandler(e) } placeholder="Avatar Image"/>
                             { errors.image ? <span className="text-danger">{errors.image.message} </span> : "" }
-                            {onePirate.image == null ? <span className="text-danger">Image of pirate is required and must be a single file less than 16 mb!!</span> : "" }
+                            {onePirate.image == null ? <span className="text-danger">Image is required and must be a single file less than 16 mb!!</span> : "" }
                             <br /><br /><br />
                             
                             <label for="formGroupExampleInput"># of Treasure Chests Looted:  </label>
                             <input type="number" class="form-control" id="formGroupExampleInput" name='treasure' onChange={ changeHandler } value={onePirate.treasure} placeholder="Do u even loot?"/>
                             { errors.treasure ? <span className="text-danger">{errors.treasure.message} </span> : "" }
-                            {!onePirate.treasure || onePirate.treasure.includes("-")? <span className="text-danger">Treasure must be 0 or greater to join da stain gang</span> : "" }
+                            {!onePirate.treasure || onePirate.treasure.includes("-")? <span className="text-danger">Treasure must be 0 or greater to join</span> : "" }
                             <br /><br />
                             
                             <label htmlFor="phrase">Catchy Catch Phrase: </label>
@@ -94,11 +94,11 @@ const Add = props => {
                         <select id="Select" class="form-control" required name='position' onChange={ changeHandler } value={onePirate.position}>
                                 <option selected disabled={true} value="">Select</option>
                                 <option value="The Professor">The Professor</option>
-                                <option value="Right Hand">Right Hand</option>
-                                <option value="Top G">Top G</option>
-                                <option value="Real Hitta">Real Hitta</option>
-                                <option value="Importer">Importer</option>
-                                <option value="Exporter">Exporter</option>
+                                <option value="Rage Kid">Rage Kid</option>
+                                <option value="Rusher">Rusher</option>
+                                <option value="Sniper">Sniper</option>
+                                <option value="LMG">LMG</option>
+                                <option value="Tactical">Tactical</option>
                                 <option value="Intel">Intel</option>
                                 <option value="Driver">Driver</option>
                             </select>
@@ -112,12 +112,12 @@ const Add = props => {
                             <br /><br /> <br /><br />
                             
                             <input type="checkbox" style={{marginLeft: '50px'}} defaultChecked={onePirate.patch}  name='patch' onChange={ boxHandler } value={onePirate.patch}/> &nbsp;&nbsp;
-                            <label for="formGroupExampleInput">Clutching? </label>
+                            <label for="formGroupExampleInput">Self-Revive? </label>
                             { errors.patch ? <span className="text-danger">{errors.patch.message} </span> : "" }
                             <br /><br /><br /><br />
                             
                             <input style={{marginLeft: '50px'}} type="checkbox" defaultChecked={onePirate.hook} name='hook' onChange={ boxHandler } value={onePirate.hook} /> &nbsp;&nbsp;
-                            <label for="formGroupExampleInput">In the 'Need to Know'? </label>
+                            <label for="formGroupExampleInput">3 Plate Armor Vest? </label>
                             { errors.hook ? <span className="text-danger">{errors.hook.message} </span> : "" }
                             <br /><br /><br />
                             

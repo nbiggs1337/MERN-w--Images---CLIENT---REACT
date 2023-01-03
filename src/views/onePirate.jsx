@@ -35,9 +35,9 @@ const OnePirate = props => {
                     <br />
                     <h2>Backup Driver: {thisPirate.leg ? "Yes" : "No "}</h2>
                     <br />
-                    <h2>Clutching: {thisPirate.patch ? "Yes" : "No "}</h2>
+                    <h2>Self-Revive: {thisPirate.patch ? "Yes" : "No "}</h2>
                     <br />
-                    <h2>In the 'need to know': {thisPirate.hook ? "Yes" : "No "}</h2>
+                    <h2>3-Plate Armor Vest: {thisPirate.hook ? "Yes" : "No "}</h2>
                     
                 </div>
                 

@@ -21,7 +21,7 @@ const Main = (props) => {
             <nav class="navbar fixed-top navbar-dark bg-secondary">
                 
                 <h1 className="text-lg-center" style={{marginLeft: "35%"}}>
-                    Biggs' Lootin' Crew
+                    Biggs' Battle Royale Crew
                 </h1>
                 
                 <Link to="/pirate/new">]
@@ -37,7 +37,7 @@ const Main = (props) => {
                 pirates.map((pirate, i) => (
                     <div className="container"> <Card key={i} pirate={pirate} reload={reload} update={update} /> <br /> </div>
                 ))
-            : "There are no pirates in the crew. Add a pirate with the top right link. "
+            : "There are no member in the crew. Add a pirate with the top right link. "
             }
             
             
